@@ -29,27 +29,43 @@ int main()
 {
 
     vector<int> arr = {15, 18, 2, 3, 6, 12};
-    
-//find the smallest item and its index from the array
-// if we look in to array is sorted but divided in to two part 
-// so we find the minimum element and its index and that indext is the answer(for searching we use iteration method or binary search)
 
+    // find the smallest item and its index from the array
+    //  if we look in to array is sorted but divided in to two part
+    //  so we find the minimum element and its index and that indext is the answer(for searching we use iteration method or binary search)
 
-int min=arr[0];
-int index=0;
-
-// this is regular method to searh element using iteration
-for(int i=0;i<arr.size();i++){
-    if(min>arr[i]){
-        min=arr[i];
-        index=i;
+    // this is regular method to searh element using iteration
+      int min = arr[0];
+    int index = 0;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (min > arr[i])
+        {
+            min = arr[i];
+            index = i;
+        }
     }
-}
+     cout<<"Rotation Count: "<<index<<" rotation";
+
+    // using binary search
+
+//     int low = 0;
+//     int high = arr.size() - 1;
 
 
+//    while (low < high)
+// {
+//     int mid = low + (high - low) / 2;
 
+//     if (arr[mid] > arr[high])
+//     {
+//         low = mid + 1;
+//     }
+//     else
+//     {
+//         high = mid;
+//     }
+// }
 
-cout<<"No of rotation is: "<<index;
-
-
+// cout << "Rotation Count:" << low;
 }
