@@ -1,5 +1,5 @@
 /*
-! Leaders in an array
+! Leaders in an array.
 
 Todo: Given an array arr[] of size n, the task is to find all the Leaders in the array. An element is a Leader if it is greater than or equal to all the elements to its right side.
 
